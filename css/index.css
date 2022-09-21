@@ -175,6 +175,7 @@
     }
     .search-form__inputs {
         width: 350px;
+        height: 420px;
     }
     .footer {
         padding-top: 100px;
@@ -200,10 +201,17 @@
     }
     .search-form__inputs {
         width: 320px;
-        height: 430px;
+        height: 350px;
     }
     .search-form__input {
         padding-left: 15px;
+        height: 70px;
+    }
+    .search-form__select {
+        height: 70px;
+    }
+    .search-form__button {
+        height: 70px;
     }
     .footer h1 {
         font-size: 30px;
