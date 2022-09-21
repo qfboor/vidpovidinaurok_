@@ -38,7 +38,6 @@
 
 .search-form__input {
     padding-left: 25px;
-    width: 640px;
     height: 89px;
     border: 2px solid #000000;  
     outline: none; 
@@ -50,7 +49,6 @@
 }
 
 .search-form__button {
-    width: 640px;
     height: 89px;
     background: #FFB935;  
     border: none;  
@@ -72,7 +70,6 @@
     font-size: 24px;
     line-height: 29px;   
     padding-left: 25px;
-    width: 640px;
     height: 89px;
     background: none;
     border: 2px solid #000000;  
@@ -116,4 +113,105 @@
     font-size: 36px;
     line-height: 44px;
     text-align: center; 
+}
+
+@media screen and (max-width: 1350px) {
+    .container {
+        width: 910px;
+    }
+    .search-form__inputs {
+        width: 500px;
+    }
+    .header h1 {
+        font-size: 40px;
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .container {
+        width: 710px;
+    }
+    .search-form__inputs {
+        width: 400px;
+    }
+    .header {
+        padding-top: 120px;
+    }
+    .header h1 {
+        margin-bottom: 120px;
+        font-size: 36px;
+    }
+    .search-form__input {
+        font-size: 20px;
+    }
+    .search-form__select {
+        font-size: 20px;
+    }
+    .footer h1 {
+        font-size: 34px;
+    }
+    .footer p {
+        font-size: 28px;
+    }
+    .footer h2 {
+        font-size: 30px;
+    }
+    .search-form__button P {
+        font-size: 34px;        
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header {
+        padding-top: 80px;
+    }
+    .header h1 {
+        margin-bottom: 80px;
+        font-size: 36px;
+    }
+    .container {
+        width: 350px;
+    }
+    .search-form__inputs {
+        width: 350px;
+    }
+    .footer {
+        padding-top: 100px;
+    }
+    .footer h1 {
+        font-size: 32px;
+    }
+    .footer p {
+        font-size: 26px;
+    }
+    .footer h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .container {
+        width: 320px;
+    }
+    .header h1 {
+        margin-bottom: 80px;
+        font-size: 34px;
+    }
+    .search-form__inputs {
+        width: 320px;
+        height: 430px;
+    }
+    .search-form__input {
+        padding-left: 15px;
+    }
+    .footer h1 {
+        font-size: 30px;
+    }
+    .footer p {
+        font-size: 24px;
+    }
+    .footer h2 {
+        font-size: 28px;
+    }
 }
