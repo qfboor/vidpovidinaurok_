@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="css/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Знайти тест На Урок</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Знайти тест з сайту <a href="https://naurok.com.ua/"  target="_blank">На Урок</a></h1>
+            <div class="search-form">
+                <form class="search-form__inputs" action="dJango/back.py" method="POST"> 
+                    <select name="user_subject" id="" class="search-form__select">
+                        <option value="algebra">Алгебра</option>
+                        <option value="english">Англійська-мова</option>
+                        <option value="astronomy">Астрономія</option>
+                        <option value="biology">Біологія</option>
+                        <option value="world-history">Всесвітня Історія</option>
+                        <option value="geography">Географія</option>
+                        <option value="geometry">Геометрія</option>
+                        <option value="civic-education">Громадянська освіта</option>
+                        <option value="ecology">Екологія</option>
+                        <option value="economy">Економія</option>
+                        <option value="etics">Етика</option>
+                    </select>
+                    <input type="text" required class="search-form__input" placeholder="Введіть свій клас" name="user_grade">
+                    <input type="text" required class="search-form__input" placeholder="Введіть кількість запитань" name="user_question">
+                    <button type="submit" class="search-form__button"></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+</body>
+</html>

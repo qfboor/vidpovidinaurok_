@@ -1,0 +1,61 @@
+/* import fonts and reset default styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+@import url("base.css");
+
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.header {
+    padding-top: 150px;
+}
+
+.header h1 {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 150px;
+}
+
+.header a {
+    text-decoration: none;
+    color: #0C6CC5;
+}
+
+.search-form__inputs {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    margin: 0 auto;
+    height: 473px;
+    justify-content: space-between;
+}
+
+.search-form__input {
+    width: 640px;
+    height: 89px;
+    border: 2px solid #000000;  
+    outline: none;  
+}
+
+.search-form__button {
+    width: 640px;
+    height: 89px;
+    background: #FFB935;  
+    border: none;  
+    cursor: pointer;
+}
+
+.search-form__select {
+    width: 640px;
+    height: 89px;
+    background: none;
+    border: 2px solid #000000;  
+    cursor: pointer;
+}
