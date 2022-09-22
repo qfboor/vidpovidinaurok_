@@ -21,6 +21,8 @@ def login():
             time.sleep(5)
             results.append(page_num - 1)
             results.extend(scrap_one_page(driver.page_source, int(user_question)))
+            driver.close()
+            driver.quit()
 
         return render_template('results.html', content=results)
     else:
