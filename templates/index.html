@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
     <link rel="shortcut icon" type="image/ico" href="assets/favicon.ico">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +13,7 @@
         <div class="header">
             <h1>Знайти тест з сайту <a href="#"  target="_blank">На Урок</a></h1>
             <div class="search-form">
-                <form class="search-form__inputs" action="dJango/back.py" method="POST"> 
+                <form class="search-form__inputs" action="#" method="POST">
                     <select name="user_subject" id="" class="search-form__select">
                         <option value="algebra">Алгебра</option>
                         <option value="english">Англійська-мова</option>
