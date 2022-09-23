@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="shortcut icon" type="image/ico" href="assets/favicon.ico">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Знайти тест На Урок</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Знайти тест з сайту <a href="#"  target="_blank">На Урок</a></h1>
+            <div class="search-form">
+                <form class="search-form__inputs" action="#" method="POST">
+                    <select name="user_subject" id="" class="search-form__select">
+                        <option value="algebra">Алгебра</option>
+                        <option value="english">Англійська-мова</option>
+                        <option value="astronomy">Астрономія</option>
+                        <option value="biology">Біологія</option>
+                        <option value="world-history">Всесвітня Історія</option>
+                        <option value="geography">Географія</option>
+                        <option value="geometry">Геометрія</option>
+                        <option value="civic-education">Громадянська освіта</option>
+                        <option value="ecology">Екологія</option>
+                        <option value="economy">Економія</option>
+                        <option value="etics">Етика</option>
+                    </select>
+                    <input type="text" required class="search-form__input" placeholder="Введіть свій клас" name="user_grade">
+                    <input type="text" required class="search-form__input" placeholder="Введіть кількість запитань" name="user_question">
+                    <button type="submit" class="search-form__button"><p>Знайти</p></button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+            <h1>Як це працює?</h1>
+            <p>Спочатку ви повинні зареєсруватися на сайті “На Урок” як вчитель. Зробити це можна <a href="#">тут.</a></p>
+            <p>Далі потрібно знайти свій тест за допомогою цієї программи. І в кінці вам потрібно роздрукувати тест який ви знайшли, знизу будуть відповіді до тесту. </p>
+            <h2>Зберігайте академічну доброчестність(лол)</h2>
+        </div>
+    </div>
+</body>
+</html>
