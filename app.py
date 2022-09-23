@@ -11,7 +11,7 @@ app = Flask(__name__)
 def login():
     if request.method == 'POST':
         results = []
-        for page_num in range(1, 4):
+        for page_num in range(1, 2):
             user_subject = request.form['user_subject']
             user_grade = request.form['user_grade']
             user_question = request.form['user_question']
@@ -19,11 +19,9 @@ def login():
             url = f'https://naurok.com.ua/test/{user_subject}/klas-{user_grade}?storinka={page_num}'
             driver.get(url)
             time.sleep(5)
-            results.append(page_num - 1)
             results.extend(scrap_one_page(driver.page_source, int(user_question)))
             driver.close()
             driver.quit()
-
         return render_template('results.html', content=results)
     else:
         return render_template('index.html')
@@ -50,4 +48,4 @@ def get_question_links(block):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
